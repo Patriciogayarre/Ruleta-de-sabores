@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruleta de Sabores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="titulo">Ruleta de sabores!</h1>
+
+  <div class="container">
+    <div class="pointer"></div>
+    <canvas id="wheel" width="400" height="400"></canvas>
+  </div>
+
+  <button onclick="spin()">Girar ruleta</button>
+  <div id="result"></div>
+  <div id="turns">Turnos: 0</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
