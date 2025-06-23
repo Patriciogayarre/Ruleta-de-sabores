@@ -69,8 +69,6 @@ function spin() {
 
   setTimeout(() => {
     const finalDegrees = (currentRotation + degrees) % 360;
-
-    // Desplazamos el resultado 2 posiciones a la izquierda (corrige 2 casilleros a la derecha)
     const correctedDegrees = (360 - finalDegrees + anglePerSlice / 2 + 4 * anglePerSlice) % 360;
     const index = Math.floor(correctedDegrees / anglePerSlice);
     const comida = options[index];
